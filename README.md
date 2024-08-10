@@ -218,7 +218,10 @@ Security Monitoring:
 Use Case: Monitor security logs for anomalies.
 
 Integration: Security logs from AWS services (such as CloudTrail, GuardDuty, or Security Hub) can be ingested into Elasticsearch. Kibana’s security features can then be used to analyze these logs and set up alerts for potential threats.
- 
+
+================================================================================================
+
+4. Advise strategies or tools you are going to use to provide the desired security features. You can recommend some general security strategies and tools that could be considered, without providing a comprehensive security plan.
 
 
 
