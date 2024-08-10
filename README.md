@@ -100,6 +100,8 @@ time.
 rules.
 6. Gmail Integration: Sends email notifications for critical alerts.
 
+These all above components are integrated with our infrastructure and we have configured the metrics when alerts should be triggered through the mail that is given below:
+
 Alerts:
 
 1. InstanceDown: Triggers when an instance is down for more than 1 
