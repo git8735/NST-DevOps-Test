@@ -76,3 +76,56 @@ Pipeline Stages:
 
 ================================================================================
 
+3. What tools are you going to use for monitoring and alerting purposes, and how they are going to be integrated with the infrastructure?
+You can suggest a few popular monitoring and alerting tools, and provide a general overview of how they could be integrated with the infrastructure, without getting into the technical implementation.
+
+We are going to use ultimate monitoring tools Prometheus & Grafana.
+
+Introduction: 
+
+In our project, we implemented a comprehensive monitoring solution using Prometheus and various exporters to ensure the reliability and performance of a web application hosted on AWS EC2 instances. This setup includes Node Exporter for hardware and OS metrics, Blackbox Exporter for probing endpoints, and Alertmanager for handling alerts. Gmail integration was also configured to receive notifications for critical alert.
+
+Components: 
+
+1. EC2 Instances:
+  • Instance 1: Hosts the web application, Node Exporter, and Nginx.
+  • Instance 2: Hosts Prometheus, Blackbox Exporter, and Alertmanager.
+2. Prometheus: Centralized monitoring tool for collecting and querying 
+metrics.
+3. Node Exporter: Collects hardware and OS-level metrics from the web 
+server.
+4. Blackbox Exporter: Probes endpoints to monitor uptime and response 
+time.
+5. Alertmanager: Manages alerts sent by Prometheus based on defined 
+rules.
+6. Gmail Integration: Sends email notifications for critical alerts.
+
+Alerts:
+
+1. InstanceDown: Triggers when an instance is down for more than 1 
+minute.
+2. WebsiteDown: Triggers when the website is down for more than 1 
+minute.
+3. HostOutOfMemory: Triggers when available memory is less than 25% 
+for more than 5 minutes.
+4. HostOutOfDiskSpace: Triggers when the root filesystem has less than 
+50% available space.
+5. HostHighCpuLoad: Triggers when CPU load is above 80% for more than 
+5 minutes.
+6. ServiceUnavailable: Triggers when the node exporter service is 
+unavailable for more than 2 minutes.
+7. HighMemoryUsage: Triggers when memory usage exceeds 90% for 
+more than 10 minutes.
+8. FileSystemFull: Triggers when any filesystem has less than 10% available 
+space for more than 5 minutes
+
+For Above process we have allowed necessary ports in the respective security group:
+
+• Prometheus: 9090
+• Alert manager: 9093
+• Blackbox Exporter: 9115
+• Node Exporter: 9100
+• Email transmissions: 587
+
+
+
