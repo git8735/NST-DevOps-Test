@@ -223,6 +223,54 @@ Integration: Security logs from AWS services (such as CloudTrail, GuardDuty, or 
 
 4. Advise strategies or tools you are going to use to provide the desired security features. You can recommend some general security strategies and tools that could be considered, without providing a comprehensive security plan.
 
+There are differet types of security strategies or security tools we are using in our infrastructure :
+
+Security Strategies/Tools:
+
+1. AWS Identity and Access Management (IAM):
+
+   Principle of Least Privilege: Ensure that users, roles, and services only have the permissions necessary to perform their tasks. This minimizes the risk of unauthorized access.
+
+   Multi-Factor Authentication (MFA): Require MFA for accessing critical systems, especially for administrative users, to add an extra layer of security.
+
+2. Data Encryption:
+
+   Encryption at Rest: Encrypt data stored in databases, S3 buckets, and EBS volumes to protect sensitive information. AWS services like Amazon RDS, S3, and EBS using AWS Access Key Management Service (KMS).
+
+3. Network Security:
+
+   VPC Security: Use Virtual Private Cloud (VPC) security features like security groups, network access control lists (NACLs), and VPC peering to control inbound and outbound traffic.
+
+4. Application Security:
+
+   Application Security tools like SonarQube, OWASP to identify security vulnerabilities in sourcecode and running application.
+
+5. Security Monitoring and Threat Detection:
+
+   SIEM (Security Information & Event Management) - SIEM tool like Splunk is a most demanded tools for security threats, and generate alerts.
+
+
+I would like to suggest some very powerful Security tools which can be integrate with our infrastructure are given below:
+
+1. DLP (Data Loss Prevention) - It is a critical security strategy that helps organizations protect sensitive data from being exposed, accessed, or transmitted outside the organization without proper authorization.
+
+2. TrendMicro:
+
+   Trend Micro Cloud One: It is a cloud security platform that includes tools for workload security, container security, file storage security. It designed to secure cloud environments, such as AWS, Azure, and 
+   Google Cloud.
+
+   Trend Micro Apex One: An endpoint protection platform that offers advanced threat protection, including DLP capabilities, for desktops, laptops, and servers.
+
+   Trend Micro Deep Security: A security solution for servers and virtual environments that provides comprehensive protection against a wide range of threats, including malware, vulnerabilities, and unauthorized 
+   access.
+
+==============================================================================
+   
+
+
+
+
+
 
 
 
