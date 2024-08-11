@@ -76,6 +76,10 @@ Pipeline Stages:
 
 ================================================================================
 
+
+![image](https://github.com/user-attachments/assets/e7977626-f096-46ed-93c0-8b876ee676fc)
+
+
 3. What tools are you going to use for monitoring and alerting purposes, and how they are going to be integrated with the infrastructure?
 You can suggest a few popular monitoring and alerting tools, and provide a general overview of how they could be integrated with the infrastructure, without getting into the technical implementation.
 
