@@ -83,7 +83,7 @@ Pipeline Stages:
 ![image](https://github.com/user-attachments/assets/c4eabbef-4b37-4de2-969f-d8c37b2f3c41)
 
 I am using the EC2 Instance & RDS database, RDS database stores the customer account info like user’s name, email, password, credit card account, etc. and whenever user login, it matches with the saved credential and after matching return to EC2 instance authorizing the user. It also has the full list of shows, episodes, etc.
-It also supports scalability and elasticity by increasing the number of instances as load increase and deleting the instance when traffic is less. Content provider will have to pay less for RDS as well EC2 and other services as it is pay as you go system. However, in case of on-premise databases and servers it is not possible and it will also take lots of time to setup.
+It also supports scalability and elasticity by increasing the number of instances as load increase and deleting the instance when traffic is less. Content provider will have to pay less for RDS as well EC2 and other services as it is pay as you go system.
 
 ================================================================================
 
