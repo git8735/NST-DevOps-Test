@@ -74,7 +74,7 @@ Pipeline Stages:
        - Use tools like OWASP ZAP to conduct penetration testing.
        - Identify and mitigate any security vulnerabilities found.
 
-================================================================================
+========================================================================
 
 2. Draw the architecture diagram based on the functional requirements and what AWS services are you going to use and why?
    You can sketch a high-level architecture diagram that showcases the key AWS services and components, without delving into the specifics of how they will be implemented.
@@ -85,7 +85,7 @@ Pipeline Stages:
 I am using the EC2 Instance & RDS database, RDS database stores the customer account info like user’s name, email, password, credit card account, etc. and whenever user login, it matches with the saved credential and after matching return to EC2 instance authorizing the user. It also has the full list of shows, episodes, etc.
 It also supports scalability and elasticity by increasing the number of instances as load increase and deleting the instance when traffic is less. Content provider will have to pay less for RDS as well EC2 and other services as it is pay as you go system.
 
-================================================================================
+=======================================================================
 
 3. What tools are you going to use for monitoring and alerting purposes, and how they are going to be integrated with the infrastructure?
 You can suggest a few popular monitoring and alerting tools, and provide a general overview of how they could be integrated with the infrastructure, without getting into the technical implementation.
@@ -230,7 +230,7 @@ Use Case: Monitor security logs for anomalies.
 
 Integration: Security logs from AWS services (such as CloudTrail, GuardDuty, or Security Hub) can be ingested into Elasticsearch. Kibana’s security features can then be used to analyze these logs and set up alerts for potential threats.
 
-============================================================================================
+=================================================================
 
 4. Advise strategies or tools you are going to use to provide the desired security features. You can recommend some general security strategies and tools that could be considered, without providing a comprehensive security plan.
 
@@ -275,7 +275,7 @@ I would like to suggest some very powerful Security tools which can be integrate
    Trend Micro Deep Security: A security solution for servers and virtual environments that provides comprehensive protection against a wide range of threats, including malware, vulnerabilities, and unauthorized 
    access.
 
-==========================================================================================
+==================================================================
    
 5. If you can suggest some tools or strategies for the management and maintenance of the data and infrastructure from a longer-term perspective.
 You can suggest some high-level approaches and tools for managing and maintaining the data and infrastructure over the long term, without going into the specific implementation details.
